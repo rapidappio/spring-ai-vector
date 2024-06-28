@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://pg.rapidapp.io:5432/db_fee68860_d893_4ac4_b156_2f2c9b70aac6?application_name=rapidapp_spring_ai
+    username: u_fee68860_d893_4ac4_b156_2f2c9b70aac6
+    password: kO7g5Uz9a25QD7hItD27BrKRf9o95qo8ELYZTX24N5JQ079g4H6I
+  ai:
+    ollama:
+      embedding:
+        enabled: false
+    vectorstore:
+      pgvector:
+        index-type: hnsw
+        distance-type: cosine_distance
+        dimensions: 384
+        remove-existing-vector-store-table: true
